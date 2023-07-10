@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        >
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="380dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/logopri"></ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#1BA89B"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correo Electronico"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+
+            android:id="@+id/CorreoEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+
+            android:id="@+id/PassEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/ColorApi"
+            android:text="Iniciar Sesión" />
+
+        <Button
+            android:id="@+id/ButtoRegister"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/Letra_button"
+            android:text="Crear una cuenta" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/ColorApi"></LinearLayout>
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="1dp"
+                android:text="O"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/ColorApi"></LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center">
+
+        </com.google.android.gms.common.SignInButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="¿Olvidaste tu contraseña?"
+            android:textColor="@color/black"
+            android:textSize="15dp"></TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
